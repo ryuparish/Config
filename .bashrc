@@ -91,6 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias mapper='./Code/utility/scripts/mapper.sh'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -119,4 +120,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
 export PATH="/home/ryuparish/.local/bin:$PATH"
+export PATH="/home/ryuparish/DL_pkgs/GoogleProtobuf:$PATH"
+PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+export PKG_CONFIG_PATH
