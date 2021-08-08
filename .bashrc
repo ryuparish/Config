@@ -125,3 +125,4 @@ export PATH="/home/ryuparish/.local/bin:$PATH"
 export PATH="/home/ryuparish/DL_pkgs/GoogleProtobuf:$PATH"
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
+export GO111MODULE=on
