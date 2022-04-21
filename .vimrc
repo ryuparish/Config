@@ -7,8 +7,8 @@ filetype plugin indent on
 
 " My personal vim configuration
 syntax on
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 imap ii <Esc>
 map <ENTER> o<esc>
