@@ -11,7 +11,13 @@ fi
 
 
 # Aliases
+# R: Clean and clear 
 alias c="clear ls"
+
+# R: Clean and clear fuzz
+alias clea="clear ls"
+alias rl="clear ls"
+alias rls="clear ls"
 
 # Showing Colors: for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
@@ -49,13 +55,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 
 ## Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="$PATH:$HOME/.rvm/bin"
