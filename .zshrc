@@ -2,13 +2,6 @@
 if [ "$TMUX" = "" ]; then tmux; fi
 export PATH
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 
 # Aliases
 # R: Clean and clear 
@@ -18,6 +11,7 @@ alias c="clear ls"
 alias clea="clear ls"
 alias rl="clear ls"
 alias rls="clear ls"
+alias clera="clear ls"
 
 # Showing Colors: for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
@@ -55,6 +49,11 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+#
 ## Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH=$PATH:/Users/parisryu/.toolbox/bin
+export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
