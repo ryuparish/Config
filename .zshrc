@@ -5,13 +5,14 @@ export PATH
 
 # Aliases
 # R: Clean and clear 
-alias c="clear ls"
+alias c="clear; ls"
 
 # R: Clean and clear fuzz
-alias clea="clear ls"
-alias rl="clear ls"
-alias rls="clear ls"
-alias clera="clear ls"
+alias clea="clear; ls"
+alias rl="clear; ls"
+alias rls="clear; ls"
+alias clera="clear; ls"
+alias cler="clear; ls"
 
 # Showing Colors: for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
