@@ -1,0 +1,9 @@
+1. Use zooming in tmux
+
+2. Use marks from vim to look at certain lines of code quickly
+
+3. Use preset tmux pane configs for common situations
+
+4. Use vim editing for long lines of commands
+
+5. Switching panes, windows, and clearing/killing panes/windows.
