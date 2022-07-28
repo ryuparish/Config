@@ -1,9 +1,16 @@
 1. Use zooming in tmux
 
 2. Use marks from vim to look at certain lines of code quickly
+  - USE MARKS TO JUMP TO A SPECIFIC, SAVED LINE OF CODE FROM **ANY**
+  OTHER FILE (go back to your specific line of code without having to have the file
+  open at all after searching somewhere else in your codebase for some info/answers)
 
 3. Use preset tmux pane configs for common situations
 
 4. Use vim editing for long lines of commands
 
 5. Switching panes, windows, and clearing/killing panes/windows.
+
+6. Use "grep -R "<Your desired string here>" " to look for things in a medium-small codebase.
+  Know that this only will search the file tree beginning at the directory in which the command is
+  run.
