@@ -1,6 +1,6 @@
 # ~/.tmuxinator/sample.yml
 
-name: sample
+name: frontend
 root: ~/
 
 # Optional tmux socket
