@@ -1,6 +1,9 @@
 # Initializing tmux
-if [ "$TMUX" = "" ]; then tmux; fi
+# R: Only makes a tmux session if there is not a previous one.
 export PATH
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
 
 
 # Aliases
@@ -13,6 +16,15 @@ alias rl="clear; ls"
 alias rls="clear; ls"
 alias clera="clear; ls"
 alias cler="clear; ls"
+alias cle="clear; ls"
+alias clar="clear; ls"
+alias lear="clear; ls"
+
+# R: Back up the file tree
+alias b="cd .."
+
+# R: Tmuxniator shortcut
+alias mux="tmuxinator"
 
 # Showing Colors: for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
