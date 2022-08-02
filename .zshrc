@@ -5,6 +5,24 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
 fi
 
+# Work Stuff
+# -----------------------------------------------------------------------------
+if [[ $USER == "parisryu" ]]; then
+  # It's okay
+  if [ -d "$HOME/.toolbox/bin" ]; then
+    PATH="$HOME/.toolbox/bin:$PATH"
+  fi
+
+  # Aliases for brazil
+  alias bb='brazil-build'
+  alias bre='brazil-runtime-exec'
+  alias brc='brazil-recursive-cmd'
+  alias bbb='brc --allPackages brazil-build'
+
+  # Annoying security
+  export GOPROXY=direct
+fi
+
 
 # Aliases
 # R: Clean and clear 

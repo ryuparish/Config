@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Mac
+*.swp
+
 # Object files
 *.o
 *.ko
