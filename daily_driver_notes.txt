@@ -22,3 +22,6 @@
 6. Use "grep -R "<Your desired string here>" " to look for things in a medium-small codebase.
   Know that this only will search the file tree beginning at the directory in which the command is
   run.
+
+7. Use "+y to yank into your "plus" clipboard (the one that uses ctrl-x/c/v) and use "*y to yank into your
+  "star" clipboard.

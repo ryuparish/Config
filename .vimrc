@@ -13,7 +13,6 @@ set expandtab
 imap ii <Esc>
 map <ENTER> o<esc>
 set ai
-set number relativenumber
 set hlsearch
 set ruler
 set nofixendofline

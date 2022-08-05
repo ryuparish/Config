@@ -37,12 +37,19 @@ alias cler="clear; ls"
 alias cle="clear; ls"
 alias clar="clear; ls"
 alias lear="clear; ls"
+alias lcear="clear; ls"
 
 # R: Back up the file tree
 alias b="cd .."
 
 # R: Tmuxniator shortcut
 alias mux="tmuxinator"
+
+# R: Git Stuff
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gc="git commit"
 
 # Showing Colors: for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
