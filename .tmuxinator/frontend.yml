@@ -1,7 +1,8 @@
 # ~/.tmuxinator/sample.yml
 
-name: frontend
-root: ~/
+# R: fe for frontend
+name: fe
+root: /workplace/parisryu/ParksideSolarPanel/src/ParksideSolarPanelFrontend/src
 
 # Optional tmux socket
 # socket_name: foo
@@ -41,21 +42,60 @@ root: ~/
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 # startup_pane: 1
 
-# Controls whether the tmux session should be attached to automatically. Defaults to true.
-# attach: false
+# Controvi - whether the tmux session should be attached to automatically. Defaults to true.
+# attach: favi -e
+# 
+# Sample Config:
+# name: sample
+# root: ~/
+# 
+# windows:
+#   - stats:
+#     - ssh stats@example.com
+#     - tail -f /var/log/stats.log
+#   - logs:
+#       layout: main-vertical
+#       panes:
+#         - logs:
+#           - ssh logs@example.com
+#           - cd /var/logs
+#           - tail -f development.log
+
 
 windows:
   - compile-n-code:
       layout: 0c11,294x76,0,0{147x76,0,0,0,146x76,148,0[146x38,148,0,7,146x37,148,39,8]}
       panes:
-        - ls
-        - ls
-        - ls
-  - compare:
+        - vi -c 'execute "normal - \\f"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+  - single:
+      panes:
+        - vi -c 'execute "normal -"'
+  - 2-compare:
       layout: even-horizontal
       panes:
-        - ls
-        - ls
-  - logs:
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+  - 3-compare:
+      layout: 0c11,294x76,0,0{147x76,0,0,0,146x76,148,0[146x38,148,0,7,146x37,148,39,8]}
       panes:
-        - ls
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+  - 4-compare:
+      layout: 4b8f,272x65,0,0{80x65,0,0,153,191x65,81,0[191x21,81,0,155,191x21,81,22,154,191x21,81,44,156]}
+      panes:
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+  - run-server:
+      panes:
+        - vi -c 'execute "normal -"'
+  - logs:
+      layout: even-horizontal
+      panes:
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'

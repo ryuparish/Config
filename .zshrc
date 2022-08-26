@@ -2,7 +2,7 @@
 # R: Only makes a tmux session if there is not a previous one.
 export PATH
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
+    tmux attach || tmux new -s default
 fi
 
 # Work Stuff
@@ -25,11 +25,14 @@ fi
 
 
 # Aliases
+# R: Because Neovim is way better than vim for LSP support
+alias vi="nvim"
 # R: Clean and clear 
 alias c="clear; ls"
 
 # R: Clean and clear fuzz
 alias clea="clear; ls"
+alias claer="clear; ls"
 alias rl="clear; ls"
 alias rls="clear; ls"
 alias clera="clear; ls"
@@ -94,4 +97,5 @@ unset __conda_setup
 export PATH=$PATH:/Users/parisryu/.toolbox/bin
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/home/parisryu/jdk-18.0.2.jdk/Contents/Home:$PATH"
 
