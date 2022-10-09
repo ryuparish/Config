@@ -41,6 +41,7 @@ alias cle="clear; ls"
 alias clar="clear; ls"
 alias lear="clear; ls"
 alias lcear="clear; ls"
+alias lc="clear; ls"
 
 # R: Back up the file tree
 alias b="cd .."
@@ -90,12 +91,21 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-#
+
 ## Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="$PATH:$HOME/.rvm/bin"
 
+# Amazon path settings for binaries and node.
 export PATH=$PATH:/Users/parisryu/.toolbox/bin
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
+
+# Java path settings
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/home/parisryu/jdk-18.0.2.jdk/Contents/Home:$PATH"
+export PATH="/Users/ryuparish/research/mutantTransformer/defects4j/framework/bin:$PATH"
 
+# Change this line to change the java version that is the be used! (Java 18 > is needed for jdtls server)
+export JAVA_HOME='/usr/libexec/java_home -v 19'
+
+# opam configuration
+[[ ! -r /Users/ryuparish/.opam/opam-init/init.zsh ]] || source /Users/ryuparish/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
