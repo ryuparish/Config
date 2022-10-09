@@ -104,8 +104,8 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/home/parisryu/jdk-18.0.2.jdk/Contents/Home:$PATH"
 export PATH="/Users/ryuparish/research/mutantTransformer/defects4j/framework/bin:$PATH"
 
-# Change this line to change the java version that is the be used! (Java 18 > is needed for jdtls server)
-export JAVA_HOME='/usr/libexec/java_home -v 19'
+# Change this line to change the java version that is the be used! (Seems like jdtls currenly works with gradle and Java 17 only)
+export JAVA_HOME=`/usr/libexec/java_home -v 17`
 
 # opam configuration
 [[ ! -r /Users/ryuparish/.opam/opam-init/init.zsh ]] || source /Users/ryuparish/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
