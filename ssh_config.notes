@@ -1,0 +1,18 @@
+# Example of how to jump from a single server to another server by way of a proxy jump.
+# This is helpful for when you do not have access to a VPN, but you do have access to a server that has
+# a valid certificate and allows you to login to a VPN-needed-due-to-certification server.
+
+_ -> placeholder for anonimity
+
+Host _
+    User <name of user>
+    IdentityFile /Users/skaufman/.ssh/[[ your priv key ]]
+    IdentitiesOnly yes
+    HostName _.cs.washington.edu
+    ProxyJump <name of host below>
+
+Host _
+    User <name of user>
+    IdentityFile /Users/_/.ssh/[[ your priv key ]]
+    HostName _.cs.washington.edu
+    ForwardAgent yes
