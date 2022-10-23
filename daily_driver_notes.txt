@@ -25,3 +25,7 @@
 
 7. Use "+y to yank into your "plus" clipboard (the one that uses ctrl-x/c/v) and use "*y to yank into your
   "star" clipboard.
+
+8. Use "ctrl-\ then ctrl-n" to get out of terminal mode once you do ":term" in neovim/vim.
+  - With the power of the terminal along with yanking from pane to pane, we may not need any panes 
+  from tmux, just the windows.
