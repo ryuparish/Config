@@ -1,0 +1,95 @@
+# ~/.tmuxinator/sample.yml
+
+# R: fe for frontend
+name: study331
+root: /Users/ryuparish/academics/cse331-22au-rparish
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+# on_project_first_start: command
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controvi - whether the tmux session should be attached to automatically. Defaults to true.
+# attach: favi -e
+# 
+# Sample Config:
+# name: sample
+# root: ~/
+# 
+# windows:
+#   - stats:
+#     - ssh stats@example.com
+#     - tail -f /var/log/stats.log
+#   - logs:
+#       layout: main-vertical
+#       panes:
+#         - logs:
+#           - ssh logs@example.com
+#           - cd /var/logs
+#           - tail -f development.log
+
+
+windows:
+  - code-n-term:
+      layout: 0c11,294x76,0,0{147x76,0,0,0,146x76,148,0[146x38,148,0,7,146x37,148,39,8]}
+      panes:
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "term"'
+  - single:
+      panes:
+        - vi -c 'execute "normal -"'
+  - 2-compare:
+      layout: even-horizontal
+      panes:
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+  - 3-compare:
+      layout: 0c11,294x76,0,0{147x76,0,0,0,146x76,148,0[146x38,148,0,7,146x37,148,39,8]}
+      panes:
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+  - 4-compare: 
+      layout: 4b8f,272x65,0,0{80x65,0,0,153,191x65,81,0[191x21,81,0,155,191x21,81,22,154,191x21,81,44,156]}
+      panes:
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+        - vi -c 'execute "normal -"'
+  - term:
+      panes:
+        - vi -c 'execute "term"'
