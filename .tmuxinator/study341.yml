@@ -90,6 +90,6 @@ windows:
         - vi -c 'execute "normal -"'
         - vi -c 'execute "normal -"'
         - vi -c 'execute "normal -"'
-  - term:
+  - home-term:
       panes:
-        - vi -c 'execute "term"'
+        - cd; vi -c 'execute "term"'

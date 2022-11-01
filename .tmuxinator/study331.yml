@@ -69,9 +69,9 @@ windows:
         - vi -c 'execute "normal -"'
         - vi -c 'execute "normal -"'
         - vi -c 'execute "term"'
-  - single:
+  - term:
       panes:
-        - vi -c 'execute "normal -"'
+        - vi -c 'execute "term"'
   - 2-compare:
       layout: even-horizontal
       panes:
@@ -90,6 +90,6 @@ windows:
         - vi -c 'execute "normal -"'
         - vi -c 'execute "normal -"'
         - vi -c 'execute "normal -"'
-  - term:
+  - home-term:
       panes:
-        - vi -c 'execute "term"'
+        - cd; vi -c 'execute "term"'
