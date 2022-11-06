@@ -1,2 +1,4 @@
 Do not install the latest version of jdtls, as it assumes you are using the latest version of Java and is a nightmare to fix for previous versions of Java.
   - Install the stable, non-broken version with this command: :LspInstall jdtls@1.12.0-202206011637
+
+To toggle the autocomplete, type in ctrl-e. This will abort the autocomplete for that instance.
