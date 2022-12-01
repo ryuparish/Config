@@ -24,8 +24,16 @@
   run.
 
 7. Use "+y to yank into your "plus" clipboard (the one that uses ctrl-x/c/v) and use "*y to yank into your
-  "star" clipboard.
+  "star" clipboard. You can also try visual mode to select the code, then do ":<bunch_of_stuff_here>w !pbcopy"
 
 8. Use "ctrl-\ then ctrl-n" to get out of terminal mode once you do ":term" in neovim/vim.
   - With the power of the terminal along with yanking from pane to pane, we may not need any panes 
   from tmux, just the windows.
+
+9. Use ":join-pane -t session:window" to send a pane to any window
+
+10. Use ":resize-pane [-U, -D, -L, -R] <any number>" to resize the pane in case you want to copy something and 
+  cannot use pbcopy and cannot see all of it.
+
+11. Use ctrl-r on the command line to do a reverse search of you history. This is helpful when debugging and 
+running the same command over and over and over.
